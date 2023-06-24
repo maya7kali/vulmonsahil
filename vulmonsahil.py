@@ -79,7 +79,7 @@ class VulmonScraper:
         if links:
             link_urls = [link.get("href") for link in links]
             for y, url in enumerate(link_urls):
-                reference = f"Refecence{y}"
+                reference = f"Reference{y}"
                 references[reference] = url
         else:
             references["Reference"] = None
